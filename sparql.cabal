@@ -1,0 +1,27 @@
+name:                sparql
+version:             0.1.0.0
+synopsis:            EDSL for SPARQL
+description:         EDSL for SPARQL
+homepage:            https://github.com/TravisWhitaker/sparql
+license:             MIT
+license-file:        LICENSE
+author:              Travis Whitaker
+maintainer:          pi.boy.travis@gmail.com
+copyright:           Travis Whitaker 2016
+category:            Language
+build-type:          Simple
+extra-source-files:  ChangeLog.md, README.md
+cabal-version:       >=1.10
+
+library
+  exposed-modules:     Language.SPARQL.Types
+  -- other-modules:       
+  -- other-extensions:    
+  build-depends:       base >=4.8 && <4.9
+                     , containers
+                     , rdf
+                     , servant
+                     , servant-client
+                     , text
+  hs-source-dirs:      src
+  default-language:    Haskell2010
